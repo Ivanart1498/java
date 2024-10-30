@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class Operadores_logicos{
+
+  public static void main(String []args){
+
+    Scanner Teclado = new Scanner(System.in);
+    
+     
+    int antiguedad = 0, Clave = 0;
+    
+    System.out.print("Ingresar clave del empleado: 1.Atención al Cliente/2.Departamento de Logística/3.Gerencia");
+    Clave = Teclado.nextInt;
+    
+    System.out.print("");
+    antiguedad = Teclado.nextInt;
+
+    if (Clave == 1) && (antiguedad == 1){
+
+ 	System.out.print("Con "+ antigüedad +" año de servicio, reciben 6 días de vacaciones");
+
+    } else if (Clave == 1) && (antiguedad > 1) && (antiguedad < 6){
+
+ 	System.out.print("Con "+ antigüedad +" años de servicio, reciben 14 días de vacaciones");
+
+    } else if (Clave == 1) && (antiguedad > 6){
+
+ 	System.out.print("Con "+ antigüedad +" años de servicio, reciben 20 días de vacaciones");
+
+    } else if (Clave == 2) && (antiguedad == 1){
+
+ 	System.out.print("Con "+ antigüedad +" año de servicio, reciben 8 días de vacaciones");
+
+    } else if (Clave == 2) && (antiguedad > 1) && (antiguedad < 6){
+
+ 	System.out.print("Con "+ antigüedad +" años de servicio, reciben 20 días de vacaciones");
+
+    } else if (Clave == 2) && (antiguedad > 6){
+
+ 	System.out.print("Con "+ antigüedad +" años de servicio, reciben 25 días de vacaciones");
+    } else if (Clave == 3) && (antiguedad == 1){
+
+ 	System.out.print("Con "+ antigüedad +" año de servicio, reciben 9 días de vacaciones");
+
+    } else if (Clave == 3) && (antiguedad > 1) && (antiguedad < 6){
+
+ 	System.out.print("Con "+ antigüedad +" años de servicio, reciben 27 días de vacaciones");
+
+    } else if (Clave == 3) && (antiguedad > 6){
+
+ 	System.out.print("Con "+ antigüedad +" años de servicio, reciben 30 días de vacaciones");
+
+    }
+  
+
+ }
+}
